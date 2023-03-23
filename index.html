@@ -15,17 +15,26 @@
     <title>Rezepte</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="logo">
         <img src="/images/cooking.png" alt="logo" />
       </div>
-      <div>
+      <div class="bigScreen">
+      <nav >
+        <a href="#">Rezepte</a>
+        <a href="#">Meistgeklickt</a>
+        <a href="#">Drinks</a>
+        <a href="#">Ratgeber</a>
+      </nav>
+    </div>
+
+      <div class="toggle">
         <nav>
           <input type="checkbox" id="checkbox_toggle" />
           <label for="checkbox_toggle"
             ><img class="menu-toggle" src="/images/menu.png" alt="toggle menue"
           /></label>
-          <ul>
+          <ul class="nav-list">
             <li><a href="#">Rezepte</a></li>
             <li><a href="#">Meistgeklickt</a></li>
             <li><a href="#">Drinks</a></li>
@@ -35,7 +44,8 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-container">
+
       <div class="slider">
         <img src="/images/zwiebelbrot.jpg" alt="Brot" />
 
@@ -44,28 +54,83 @@
         <img src="/images/obstcremefraiche.jpg" alt="Kuchen" />
       </div>
 
-      
+
       <div class="brot-container">
         <div class="rezept-img"> <img src="/images/weißbrot.jpeg" alt="Weißbrot"></div>
         <h2>Weißbrot</h2>
-        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> Dauer: ca. 3 Stunden</p>
+        <p class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> </p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
       </div>
+      <div class="brot-container tablet">
+        <div class="rezept-img"> <img src="/images/zwiebelbrot.jpg" alt="Weißbrot"></div>
+        <h2>Zwiebelbrot</h2>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
+      </div>
+      <div class="brot-container desktop">
+        <div class="rezept-img"> <img src="/images/körnerbrot.jpg" alt="Weißbrot"></div>
+        <h2>Vollkornbrot</h2>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
+      </div>
+
+
       <div class="fleisch-container">
         <div class="rezept-img"> <img src="/images/rindfleischgeschmort.jpg" alt="Weißbrot"></div>
         <h2>Rindfleisch geschmort</h2>
-        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> Dauer: ca. 3 Stunden</p>
+        <p class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
       </div>
-      <div class="kuchen-container">
-        <div class="rezept-img"> <img src="/images/obstcremefraiche.jpg" alt="Weißbrot"></div>
-        <h2>Fruchtige Creme-fraiche Torte</h2>
-        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> Dauer: ca. 3 Stunden</p>
+      <div class="fleisch-container tablet1">
+        <div class="rezept-img"> <img src="/images/Kustenbraten.jpg" alt="Weißbrot"></div>
+        <h2>Krustenbraten</h2>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
+      </div>
+      <div class="fleisch-container desktop1">
+        <div class="rezept-img"> <img src="/images/ochsenbaeckchent.jpg" alt="Weißbrot"></div>
+        <h2>Ochsenbäckchen geschmort</h2>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
       </div>
 
+
+
+      <div class="kuchen-container">
+        <div class="rezept-img"> <img src="/images/obstcremefraiche.jpg" alt="Weißbrot"></div>
+        <h2>Creme-fraiche Torte</h2>
+        <p class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 3 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
+      </div>
+      <div class="kuchen-container tablet2">
+        <div class="rezept-img"> <img src="/images/regenbogentorte.jpg" alt="Regenbogentorte"></div>
+        <h2>Regenbogentorte</h2>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 1,5 Stunden</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
+      </div>
+      <div class="kuchen-container desktop2">
+        <div class="rezept-img"> <img src="/images/sahnetorte.jpg" alt="Sannetorte"></div>
+        <h2>Obst Sahne Torte</h2>
+        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+        <p>Dauer: ca. 1 Stunde</p>
+        <button class="btn"><a href="">Mehr Rezepte</a></button>
+      </div>
+     
+      <div class="to-top"><a href="#top"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
 
     </main>
 
     <footer>
-      <ul>
+      <ul class="nav-footer">
         <li>
             <a href="#">Startseite</a>
         </li>
@@ -76,6 +141,30 @@
           <a href="#">Datenschutz</a>
         </li>
       </ul>
+
+      <div class="copyright"><p>
+        <i class="fa-regular fa-copyright"></i> by NFO-Group
+      </p>
+        
+      </div>
+      <div class="social-icons">
+        
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook-f icon"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram icon"></i>
+
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-twitter icon"></i>
+
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <i class="fa-brands fa-youtube icon"></i>
+        </a>        
+      </div>
+      
     </footer>
   </body>
 </html>
