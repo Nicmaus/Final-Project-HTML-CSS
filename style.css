@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --background: #f6e7cb;
+    --footer-bg: #678d58;
+    --bg-titletext: #a6c48a;
+}
+
+body {
+    background-color: var(--background);
+}
+header {
+    background-color: var(--bg-titletext);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu-toggle {
+    height: 5rem;
+}
+
+ nav ul {
+    list-style-type: none;
+    position: fixed;
+}
+
+.logo img {
+    margin-left: 15px;
+    height: 7rem;
+}
+
+.menu-toggle{
+     width: 5rem;
+     margin-top: 1rem;
+     margin-right: 3rem;
+}
+
+nav {
+    position: relative;
+    z-index: 5;
+}
+
+nav ul {
+    font-size: 3rem;
+    position: absolute;
+    left: -10rem;
+    padding: 2rem;
+    background-color: #a8cd42;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center;
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+nav > input{
+    display: none;
+}
+
+ul{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+    display: block
+}
+
+.slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 35rem;
+    opacity: 0;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@keyframes slide {
+    0%      { opacity: 0; }
+    11.11%  { opacity: 1; }
+    33.33%  { opacity: 1; } 
+    44.44%  { opacity: 0; }
+    100%    { opacity: 0; }
+}
+
+.slider :nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slider :nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slider :nth-child(3) {
+    animation-delay: 10s;
+}
+
+.brot-container {
+    width: 80%;
+    height: 25rem;
+    position: absolute;
+    top: 44rem;
+    left: 7rem;
+    text-align: center;
+}
+
+.fleisch-container {
+    width: 80%;
+    height: 25rem;
+    position: absolute;
+    top: 71rem;
+    left: 7rem;
+    text-align: center;
+}
+
+.fleisch-container img {
+    height: 20rem;
+    width: 26rem;
+}
+
+.kuchen-container {
+    width: 80%;
+    height: 25rem;
+    position: absolute;
+    top: 98rem;
+    left: 7rem;
+    text-align: center;
+}
+
+.kuchen-container img {
+    height: 20rem;
+}
