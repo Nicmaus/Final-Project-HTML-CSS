@@ -27,7 +27,7 @@ header {
 
  nav ul {
     list-style-type: none;
-    position: fixed;
+    
 }
 
 .logo img {
@@ -129,6 +129,18 @@ input[type=checkbox]:checked ~ ul {
     text-align: center;
 }
 
+.brot-container img {
+    border-radius: 5rem;
+}
+
+.brot-container h2 {
+    font-size: 3rem;
+}
+
+.brot-container p {
+    font-size: 2rem;
+}
+
 .fleisch-container {
     width: 80%;
     height: 25rem;
@@ -138,9 +150,18 @@ input[type=checkbox]:checked ~ ul {
     text-align: center;
 }
 
+.fleisch-container h2 {
+    font-size: 3rem;
+}
+
+.fleisch-container p {
+    font-size: 2rem;
+}
+
 .fleisch-container img {
     height: 20rem;
     width: 26rem;
+    border-radius: 5rem;
 }
 
 .kuchen-container {
@@ -152,6 +173,23 @@ input[type=checkbox]:checked ~ ul {
     text-align: center;
 }
 
+.kuchen-container h2 {
+    font-size: 3rem;
+}
+
+.kuchen-container p {
+    font-size: 2rem;
+}
+
 .kuchen-container img {
     height: 20rem;
+    border-radius: 5rem;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    position: absolute;
+    top: 140rem;
+    width: 100%;
+    height: 10rem;
 }
