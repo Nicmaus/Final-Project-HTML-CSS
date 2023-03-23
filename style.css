@@ -241,6 +241,10 @@ footer {
   font-size: 4rem;
 }
 
+.copyright {
+    display: none;
+}
+
 .btn {
   height: 4rem;
   width: 12rem;
