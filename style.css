@@ -89,7 +89,7 @@ input[type="checkbox"]:checked ~ ul {
 .main-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 35rem 2rem 35rem 2rem 35rem 2rem 35rem 2rem;
+  grid-template-rows:35rem auto;
 }
 
 .slider {
@@ -273,7 +273,7 @@ footer {
   .main-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 35rem 2rem 35rem 0.5rem 40rem 4rem 35rem 1rem;
+    grid-template-rows: 35rem auto;
     gap: 3rem;
     text-align: center;
   }
@@ -422,7 +422,7 @@ footer {
   .main-container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 60rem 2rem 30rem 0.5rem 30rem 4rem 30rem 4rem;
+    grid-template-rows: 60rem auto;
     gap: 3rem;
     text-align: center;
   }
