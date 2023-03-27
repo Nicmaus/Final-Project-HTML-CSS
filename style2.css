@@ -287,9 +287,10 @@
     }
 
     .main-container{
+      width: 100%;
       display: grid;
-      grid-template-columns: 13.3% 30% 13.3% 30% 13.3%;
-      grid-template-rows: auto
+      grid-template-columns: 12% 30% 12% 30% 12% 4%;
+      grid-template-rows: auto;
       gap: 2rem;
     }
 
