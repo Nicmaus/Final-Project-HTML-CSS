@@ -86,72 +86,65 @@ input[type="checkbox"]:checked ~ ul {
   display: block;
 }
 
-
-main h3{
+main h3 {
   font-size: 1rem;
 }
-.linie{
+.linie {
   border: 0;
   border-top: 2px dashed #2d511f;
-  
 }
 
-.main-container{
+.main-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 3rem 3rem 0.5rem 4rem 0.5rem 20rem ;
+  grid-template-rows: 3rem 3rem 0.5rem 2.5rem 0.5rem 20rem 20rem;
   gap: 2rem;
 }
-h1{
+h1 {
   grid-area: 1/2/2/7;
   justify-content: center;
   text-align: center;
-  
+
   font-size: 2.5rem;
 }
-h3{
+.h3 {
   text-align: center;
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
-.box{
+.box {
   grid-area: 2/2/3/7;
- 
+  font-size: 1.5rem;
 }
-.linie1{
+.linie1 {
   grid-area: 3/2/4/7;
   border: 0;
   border-top: 2px dashed #2d511f81;
-  
 }
 
-.box1{
+.box1 {
   grid-area: 4/2/5/3;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-
 }
-.star{
+.star {
   font-size: 1.5rem;
   color: red;
   height: 2rem;
   border-radius: 5%;
   background-color: #a6c48a;
-  
-  
 }
-.box2{
+.box2 {
   grid-area: 4/3/5/4;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  
 }
-.time{
+.time {
   display: flex;
   font-size: 1.5rem;
   width: 3rem;
@@ -161,14 +154,13 @@ margin-bottom: 1rem;
   align-items: center;
   text-align: center;
 }
-.box3{
+.box3 {
   grid-area: 4/4/5/5;
   font-size: 1.5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column-reverse;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
 }
 .cookie {
   display: flex;
@@ -180,18 +172,16 @@ flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
-.box4{
+.box4 {
   grid-area: 4/5/5/6;
-font-size: 1.5rem;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column-reverse;
-
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
 }
-.box4 i{
+.box4 i {
   display: flex;
   font-size: 1.5rem;
   width: 3rem;
@@ -206,45 +196,51 @@ flex-direction: column-reverse;
   font-size: 3rem;
   display: flex;
   padding: 3.5rem;
-  
-  
-  
-  
 }
-.box5 i{
+.box5 i {
   margin-left: 1rem;
   color: #678d58;
   cursor: pointer;
 }
-.linie2{
+.linie2 {
   grid-area: 5/2/6/7;
   border: 0;
   border-top: 2px dashed #2d511f7d;
-  
 }
 .container1 {
   grid-area: 6/3/7/4;
   font-size: 1.5rem;
-
-
 }
-.container1 li{
-  font-size: 0.7rem;
+.container1 li {
+  font-size: 1rem;
   text-decoration: underline;
 }
-.container2{
+.container2 {
   grid-area: 6/5/7/7;
   line-height: 1rem;
   font-size: 1.5rem;
 }
+/* .bild img {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 35rem;
+  height: 20rem;
+} */
 .bild img{
- display: flex;
- margin: 0 auto;
+  width: 10rem;
+  height: 10rem;
+  grid-area: 7/2/8/6 ;
+}
 
+
+.bild-ochse{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15rem;
   width: 35rem;
   height: 20rem;
 }
-
 
 footer {
   background-color: var(--footer-bg);
@@ -278,9 +274,7 @@ footer {
   font-size: 4rem;
 }
 
-
-
-.copyright{
+.copyright {
   display: none;
 }
 
@@ -289,115 +283,154 @@ footer {
   font-weight: bold;
 }
 
- @media screen and (min-width: 768px) and (max-width: 992px) {
-  
- }
-
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   header {
-    height: 15rem;
+    background-color: var(--bg-titleText);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bigScreen {
+    display: none;
   }
 
   .menu-toggle {
+    height: 5rem;
+  }
+
+  nav .nav-list {
+    list-style-type: none;
+  }
+
+  .logo img {
+    margin-left: 15px;
+    height: 7rem;
+  }
+
+  .menu-toggle {
+    width: 5rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+  }
+
+  nav {
+    position: relative;
+    z-index: 5;
+  }
+
+  nav .nav-list {
+    font-size: 3rem;
+    position: absolute;
+    left: -10rem;
+    padding: 2rem;
+    background-color: #a8cd42;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center;
+    width: 15rem;
+    margin-top: 1rem;
+  }
+
+  nav .nav-list li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  nav .nav-list li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  nav > input {
     display: none;
   }
- 
-  .bigScreen{
+
+  nav .nav-list {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
     display: block;
   }
-  
-.bigScreen nav {
-    margin-top: 5rem;
-}
 
-  .bigScreen nav a {
-        font-size: 4rem;
-        padding: 3rem;
-        text-decoration: none;
-        color: white;
-}
+  .linie {
+    border: 0;
+    border-top: 2px dashed #2d511f;
+  }
 
-.bigScreen a:hover {
-    color: darkgreen;
-    text-decoration: underline;
-    transition: 0.5s;
-}
-
-  .main-container{
+  .main-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 4rem 8rem 0.5rem 4rem 0.5rem 20rem ;
+    grid-template-rows: 4rem 7rem 0.5rem 4rem 0.5rem 20rem;
     gap: 2rem;
   }
-  h1{
+  h1 {
     grid-area: 1/2/2/7;
     justify-content: center;
     text-align: center;
-    
-    font-size: 4rem;
+
+    font-size: 3rem;
   }
-  .h3{
+  .h3 {
     text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-top: -2.5rem;
   }
-  .box{
+  .box {
     grid-area: 2/2/3/7;
-    font-size: 2.3rem;
-   
+    font-size: 2rem;
+    margin-top: 2rem;
   }
-  .linie1{
+  .linie1 {
     grid-area: 3/2/4/7;
     border: 0;
     border-top: 2px dashed #2d511f81;
-    
   }
-  
-  .box1{
+
+  .box1 {
     grid-area: 4/2/5/3;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-  
   }
-  .star{
+  .star {
     font-size: 1.5rem;
     color: red;
     height: 2rem;
     border-radius: 5%;
     background-color: #a6c48a;
-    
-    
   }
-  .box2{
+  .box2 {
     grid-area: 4/3/5/4;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    
   }
-  .time{
+  .time {
     display: flex;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: #a6c48a;
     align-items: center;
     text-align: center;
   }
-  .box3{
+  .box3 {
     grid-area: 4/4/5/5;
-    font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-  
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
   }
   .cookie {
     display: flex;
@@ -409,18 +442,235 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-  
   }
-  .box4{
+  .box4 {
     grid-area: 4/5/5/6;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-  
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
   }
-  .box4 i{
+  .box4 i {
+    display: flex;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #a6c48a;
+    align-items: center;
+    justify-content: center;
+  }
+  .box5 {
+    grid-area: 3/6/4/7;
+    font-size: 3.5rem;
+    display: flex;
+    padding: 3.5rem;
+  }
+  .box5 i {
+    margin-left: 1rem;
+    color: #678d58;
+    cursor: pointer;
+  }
+  .box5 i:hover {
+    color: black;
+    font-size: 4rem;
+  }
+  .linie2 {
+    grid-area: 5/2/6/7;
+    border: 0;
+    border-top: 2px dashed #2d511f7d;
+  }
+  .container1 {
+    grid-area: 6/3/7/4;
+    font-size: 2rem;
+  }
+  .container1 li {
+    font-size: 1rem;
+    text-decoration: underline;
+    font-size: 1.16rem;
+  }
+  .container2 {
+    grid-area: 6/5/7/7;
+    line-height: 1rem;
+    font-size: 2rem;
+  }
+  .bild img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 35rem;
+    height: 20rem;
+  }
+  .bild-ochse{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20rem;
+    width: 35rem;
+    height: 20rem;
+  }
+
+  footer {
+    background-color: var(--footer-bg);
+    top: 140rem;
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+
+  .nav-footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 5rem;
+    list-style: none;
+  }
+
+  .nav-footer li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+  }
+
+  .social-icons a {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .line {
+    color: #678d5879;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  header {
+    height: 15rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .bigScreen {
+    display: block;
+  }
+
+  .bigScreen nav {
+    margin-top: 5rem;
+  }
+
+  .bigScreen nav a {
+    font-size: 4rem;
+    padding: 3rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  .bigScreen a:hover {
+    color: darkgreen;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 4rem 8rem 0.5rem 4rem 0.5rem 20rem;
+    gap: 2rem;
+  }
+  h1 {
+    grid-area: 1/2/2/7;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 4rem;
+  }
+  .h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .box {
+    grid-area: 2/2/3/7;
+    font-size: 2.3rem;
+  }
+  .linie1 {
+    grid-area: 3/2/4/7;
+    border: 0;
+    border-top: 2px dashed #2d511f81;
+  }
+
+  .box1 {
+    grid-area: 4/2/5/3;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .star {
+    font-size: 1.5rem;
+    color: red;
+    height: 2rem;
+    border-radius: 5%;
+    background-color: #a6c48a;
+  }
+  .box2 {
+    grid-area: 4/3/5/4;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .time {
+    display: flex;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #a6c48a;
+    align-items: center;
+    text-align: center;
+  }
+  .box3 {
+    grid-area: 4/4/5/5;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .cookie {
+    display: flex;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #a6c48a;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box4 {
+    grid-area: 4/5/5/6;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .box4 i {
     display: flex;
     font-size: 1.5rem;
     width: 3rem;
@@ -435,58 +685,59 @@ footer {
     font-size: 3rem;
     display: flex;
     padding: 3.5rem;
-    }
-  
-  .box5 i{
+  }
+
+  .box5 i {
     margin-left: 2rem;
     color: #678d58;
     font-size: 3rem;
     cursor: pointer;
   }
-  .box5 i:hover{
+  .box5 i:hover {
     color: black;
     font-size: 4rem;
   }
-  .linie2{
+  .linie2 {
     grid-area: 5/2/6/7;
     border: 0;
     border-top: 2px dashed #2d511f7d;
-    
   }
   .container1 {
     grid-area: 6/3/7/4;
     font-size: 3.5rem;
-  
-  
   }
-  .container1 li{
+  .container1 li {
     font-size: 2rem;
     text-decoration: underline;
-    line-height: 2.8rem;  
+    line-height: 2.8rem;
   }
-  .container2{
+  .container2 {
     grid-area: 6/5/7/7;
     line-height: 2.5rem;
     font-size: 3rem;
   }
-  .bild img{
-   display: flex;
-   margin: 0 auto;
-  margin-top: 40rem;
+  .bild img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50rem;
     width: 60rem;
     height: 40rem;
   }
-  .linie{
-    
+  .bild-ochse{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60rem;
+    width: 50rem;
+    height: 50rem;
+  }
+  .linie {
     border: 0;
     border-top: 2px dashed #2d511f81;
   }
 
   .logo img {
     height: 14rem;
-  } 
-
-   
+  }
 
   footer {
     display: flex;
@@ -536,4 +787,4 @@ footer {
     color: #2d511f;
     font-size: 4rem;
   }
-}  
+}
