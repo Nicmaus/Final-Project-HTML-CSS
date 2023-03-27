@@ -110,10 +110,11 @@ h1 {
 .h3 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 .box {
   grid-area: 2/2/3/7;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .linie1 {
   grid-area: 3/2/4/7;
@@ -123,7 +124,7 @@ h1 {
 
 .box1 {
   grid-area: 4/2/5/3;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,7 +139,7 @@ h1 {
 }
 .box2 {
   grid-area: 4/3/5/4;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +157,7 @@ h1 {
 }
 .box3 {
   grid-area: 4/4/5/5;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +176,7 @@ h1 {
 }
 .box4 {
   grid-area: 4/5/5/6;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,37 +210,34 @@ h1 {
 }
 .container1 {
   grid-area: 6/3/7/4;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .container1 li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: underline;
 }
 .container2 {
   grid-area: 6/5/7/7;
-  line-height: 1rem;
-  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 2rem;
 }
-/* .bild img {
+.bild img {
   display: flex;
   margin: 0 auto;
   margin-top: 5rem;
   width: 35rem;
   height: 20rem;
-} */
-.bild img{
-  width: 10rem;
-  height: 10rem;
-  grid-area: 7/2/8/6 ;
 }
+
 
 
 .bild-ochse{
   display: flex;
   margin: 0 auto;
-  margin-top: 15rem;
+  margin-top: 1rem;
   width: 35rem;
   height: 20rem;
+  margin-left: 70px;
 }
 
 footer {
@@ -498,7 +496,7 @@ footer {
   .bild img {
     display: flex;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 8rem;
     width: 35rem;
     height: 20rem;
   }
